@@ -13,12 +13,8 @@ export async function execute(interaction: CommandInteraction){
 	if (!interaction.isRepliable()) {
 		return
 	}
-  const input = interaction.options.get('passcode').value
-	console.log('input', input)
-	// await interaction.reply({
-	// 	content: input,
-	// 	fetchReply: true,
-	// })
-
+  const input = interaction.options.get('passcode').value	
 	await interaction.reply(`${input}.`)
+	
+	console.log('input', input)
 };

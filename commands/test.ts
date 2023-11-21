@@ -25,7 +25,7 @@ export async function execute(interaction: CommandInteraction){
 		content: `you're all set`,
 		fetchReply: true,
 	})
-	// console.log('interaction', interaction.options.get('passcode').value)
-	// console.log('interaction', interaction.options.get('text').value)
-	// console.log('interaction', interaction.options.get('title').value)
+	console.log('interaction', interaction.options.get('passcode').value)
+	console.log('interaction', interaction.options.get('text').value)
+	console.log('interaction', interaction.options.get('title').value)
 };
