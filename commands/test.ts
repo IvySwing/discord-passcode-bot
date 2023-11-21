@@ -1,5 +1,4 @@
 import { CommandInteraction, SlashCommandBuilder } from 'discord.js'
-import { Interaction } from 'discord.js'
 
 export const data = new SlashCommandBuilder()
 		.setName('create')
@@ -26,5 +25,7 @@ export async function execute(interaction: CommandInteraction){
 		content: `you're all set`,
 		fetchReply: true,
 	})
-	// console.log('interaction', interaction.options.get('passcode'))
+	// console.log('interaction', interaction.options.get('passcode').value)
+	// console.log('interaction', interaction.options.get('text').value)
+	// console.log('interaction', interaction.options.get('title').value)
 };
