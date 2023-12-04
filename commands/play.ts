@@ -22,5 +22,5 @@ export async function execute(interaction: CommandInteraction){
 		content: `let's play!`,
 		fetchReply: true,
 	})
-	console.log('interaction', interaction.options.get('puzzle').value)
+	console.log('play puzzle', interaction.options.get('puzzle').value)
 };

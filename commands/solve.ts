@@ -16,5 +16,5 @@ export async function execute(interaction: CommandInteraction){
   const input = interaction.options.get('passcode').value	
 	await interaction.reply(`${input}.`)
 	
-	console.log('input', input)
+	console.log('passcode', input)
 };
